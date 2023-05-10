@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		46935ABB2A0C0F8C0046AEDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46935ABA2A0C0F8C0046AEDC /* AppDelegate.swift */; };
 		46935ABD2A0C0F8C0046AEDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46935ABC2A0C0F8C0046AEDC /* SceneDelegate.swift */; };
-		46935ABF2A0C0F8C0046AEDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46935ABE2A0C0F8C0046AEDC /* ViewController.swift */; };
+		46935ABF2A0C0F8C0046AEDC /* BeerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46935ABE2A0C0F8C0046AEDC /* BeerCollectionViewController.swift */; };
 		46935AC22A0C0F8C0046AEDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46935AC02A0C0F8C0046AEDC /* Main.storyboard */; };
 		46935AC42A0C0F8D0046AEDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46935AC32A0C0F8D0046AEDC /* Assets.xcassets */; };
 		46935AC72A0C0F8D0046AEDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46935AC52A0C0F8D0046AEDC /* LaunchScreen.storyboard */; };
+		46935AD32A0C11DC0046AEDC /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46935AD22A0C11DC0046AEDC /* Beer.swift */; };
+		46935AD52A0C1BD70046AEDC /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46935AD42A0C1BD70046AEDC /* DescriptionViewController.swift */; };
+		46935AD72A0C1C1D0046AEDC /* MyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46935AD62A0C1C1D0046AEDC /* MyCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46935AB72A0C0F8C0046AEDC /* BeerCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46935ABA2A0C0F8C0046AEDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46935ABC2A0C0F8C0046AEDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		46935ABE2A0C0F8C0046AEDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46935ABE2A0C0F8C0046AEDC /* BeerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCollectionViewController.swift; sourceTree = "<group>"; };
 		46935AC12A0C0F8C0046AEDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46935AC32A0C0F8D0046AEDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46935AC62A0C0F8D0046AEDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46935AC82A0C0F8D0046AEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46935AD22A0C11DC0046AEDC /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		46935AD42A0C1BD70046AEDC /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		46935AD62A0C1C1D0046AEDC /* MyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		46935AB92A0C0F8C0046AEDC /* BeerCollection */ = {
 			isa = PBXGroup;
 			children = (
-				46935ABA2A0C0F8C0046AEDC /* AppDelegate.swift */,
-				46935ABC2A0C0F8C0046AEDC /* SceneDelegate.swift */,
-				46935ABE2A0C0F8C0046AEDC /* ViewController.swift */,
-				46935AC02A0C0F8C0046AEDC /* Main.storyboard */,
+				46935AD12A0C0FD20046AEDC /* Models */,
+				46935ACF2A0C0FAC0046AEDC /* ViewControllers */,
+				46935ACE2A0C0F9D0046AEDC /* Storyboards */,
+				46935AD02A0C0FC30046AEDC /* App */,
 				46935AC32A0C0F8D0046AEDC /* Assets.xcassets */,
-				46935AC52A0C0F8D0046AEDC /* LaunchScreen.storyboard */,
 				46935AC82A0C0F8D0046AEDC /* Info.plist */,
 			);
 			path = BeerCollection;
+			sourceTree = "<group>";
+		};
+		46935ACE2A0C0F9D0046AEDC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				46935AC02A0C0F8C0046AEDC /* Main.storyboard */,
+				46935AC52A0C0F8D0046AEDC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		46935ACF2A0C0FAC0046AEDC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				46935ABE2A0C0F8C0046AEDC /* BeerCollectionViewController.swift */,
+				46935AD42A0C1BD70046AEDC /* DescriptionViewController.swift */,
+				46935AD62A0C1C1D0046AEDC /* MyCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		46935AD02A0C0FC30046AEDC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				46935ABA2A0C0F8C0046AEDC /* AppDelegate.swift */,
+				46935ABC2A0C0F8C0046AEDC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		46935AD12A0C0FD20046AEDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46935AD22A0C11DC0046AEDC /* Beer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46935ABF2A0C0F8C0046AEDC /* ViewController.swift in Sources */,
+				46935ABF2A0C0F8C0046AEDC /* BeerCollectionViewController.swift in Sources */,
 				46935ABB2A0C0F8C0046AEDC /* AppDelegate.swift in Sources */,
+				46935AD72A0C1C1D0046AEDC /* MyCollectionViewController.swift in Sources */,
 				46935ABD2A0C0F8C0046AEDC /* SceneDelegate.swift in Sources */,
+				46935AD52A0C1BD70046AEDC /* DescriptionViewController.swift in Sources */,
+				46935AD32A0C11DC0046AEDC /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +337,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartActive.BeerCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +368,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SmartActive.BeerCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
